@@ -9,7 +9,7 @@
           </b-navbar-nav>
           <div class="logo__section">
             <span class="logo_">
-              <img src="@/assets/img/kiswah-w-logo.png" alt="" />
+              <img src="@/assets/img/kiswah-w-logo.png" alt="kiswa logo" />
             </span>
           </div>
         </div>
