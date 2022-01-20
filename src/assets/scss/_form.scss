@@ -1,0 +1,200 @@
+input.form-control {
+  border-radius: 10px;
+  background-color: #efefef;
+  height: 55px;
+  padding: 0 20px;
+  box-shadow: none !important;
+  border: none !important;
+  transition: $transition;
+  font-weight: 800;
+  &:focus {
+    background-color: #efefef;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  text-align: right;
+  direction: rtl;
+  &::-webkit-input-placeholder {
+    color: #acacac;
+  }
+}
+input.pac-target-input {
+  transition: none !important;
+  &:focus {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.vue-phone-number-input {
+  .select-country-container {
+    background-color: #efefef;
+    border-radius: 10px 0 0 10px !important;
+  }
+  .input-tel {
+    .input-phone-number {
+      background-color: #efefef;
+    }
+  }
+  .input-tel__input {
+    background-color: #efefef !important;
+    border: 1px solid #efefef !important;
+    outline: none !important;
+    box-shadow: none !important;
+    text-align: right !important;
+    color: #495057 !important;
+    border-left: 1px solid #ccc !important;
+    height: 50px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    &::-webkit-input-placeholder {
+      color: #acacac !important;
+    }
+    &:focus {
+      font-weight: 500 !important;
+    }
+  }
+  .input-tel__label {
+    display: none !important;
+  }
+}
+.input-tel.has-hint .input-tel__input,
+.input-tel.has-value .input-tel__input {
+  padding-top: 0 !important;
+}
+.country-selector__input {
+  border: 1px solid #efefef !important;
+  background-color: #efefef !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.country-selector {
+  height: 50px !important;
+  border-radius: 10px 10px 10px 10px !important;
+}
+.country-selector__input{
+  height: 50px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+.country-selector__country-flag {
+  top: 28px !important;
+}
+.form_wrapp {
+  background-color: $white;
+  border-radius: 17px;
+  min-height: 580px;
+  max-width: 420px;
+  padding: 2em 1.5em;
+  background-color: #ffffff;
+  box-shadow: 0 19px 37px -9px rgba(0, 0, 0, 0.28);
+  position: relative;
+  top: 50px;
+  margin-bottom: 1em;
+  z-index: 1;
+  .icon_view {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    display: inline-flex;
+    @include flexCenter;
+  }
+  .form_header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2em;
+  }
+  .form_caption {
+    direction: rtl;
+    text-align: right;
+    padding-left: 2em;
+    margin-right: 20px;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      color: $text-color;
+      width: 80%;
+    }
+  }
+  @media (max-width: 768px) {
+    margin: 0 auto 1em;
+    .form_caption {
+      font-size: 75%;
+    }
+    top: 0;
+  }
+}
+.otp_inputs {
+  > div {
+    justify-content: space-between;
+    width: 100%;
+    > div {
+      padding: 5px;
+      input {
+        width: 65px;
+      }
+      > span {
+        display: none;
+      }
+    }
+  }
+}
+
+// Login
+._inputs {
+  display: flex;
+  margin-top: 2em;
+  input:focus,
+  input {
+    direction: ltr;
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  .country {
+    width: 140px;
+    margin-right: 10px;
+  }
+  .withAppend {
+    position: relative;
+    input {
+      padding-right: 55px;
+    }
+    > .check_ {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 40px;
+      height: 40px;
+      background-color: $white;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .caption_detail {
+    h1 {
+      // font-size: 30px;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 860px;
+    .form_caption {
+      font-size: 75%;
+    }
+  }
+  .header_section {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-203.000000, -283.000000)" stroke="#FFFFFF">
+            <g id="Group-12" transform="translate(160.000000, 229.000000)">
+                <g id="Group-4" transform="translate(34.000000, 46.000000)">
+                    <g id="Group-2" transform="translate(9.000000, 8.000000)">
+                        <rect id="Rectangle" x="1" y="3.5" width="16" height="20" rx="2"></rect>
+                        <rect id="Rectangle-Copy" fill="#009BC9" x="4" y="0.5" width="16" height="20" rx="2"></rect>
+                        <path d="M6,4.52112117 C7.33333333,4.50704039 8.66666667,4.49295961 10,4.47887883" id="Path"></path>
+                        <polyline id="Path-2" points="6 4.5 6.57022977 4.5 6.5966034 4.5 6.65414585 4.5 7.42017982 4.5 7.44375624 4.5 7.5016983 4.5 7.5976024 4.5 7.65594406 4.5 7.71388611 4.5 7.80979021 4.5 7.83616384 4.5 7.89450549 4.5 7.94725275 4.5 7.97362637 4.5 8 4.5"></polyline>
+                        <path d="M6,6.63627492 C9.66666667,6.54542497 13.3333333,6.45457503 17,6.36372508" id="Path-3"></path>
+                        <path d="M6,8.40111191 C10,8.26416188 14,8.73583812 18,8.59888809" id="Path-4"></path>
+                        <polyline id="Path-5" points="6 11.5 14.5111097 11.5 15.9211572 11.5 15.9609044 11.5 16 11.5"></polyline>
+                        <polyline id="Path-6" points="6 13.5 7.18642091 13.5 10.0013999 13.5 10.9241717 13.5 11 13.5"></polyline>
+                        <polyline id="Path-7" points="6 13.5 6.7901569 13.5 7.21966362 13.5 9.08443391 13.5 9.85370809 13.5 10.0501185 13.5 10.185574 13.5 10.3825488 13.5 10.5180043 13.5 11 13.5"></polyline>
+                        <polyline id="Path-8" points="6 16.5 10.7195019 16.5 16 16.5"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

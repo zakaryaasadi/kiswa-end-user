@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'ArbFONTS-GE_SS';
+  font-weight: 300;
+  src: url('../fonts/ArbFONTS-GE_SS_TEXT_LIGHT.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/ArbFONTS-GE_SS_TEXT_LIGHT.otf?#iefix') format('opentype'), /* IE6-IE8 */
+       url('../fonts/ArbFONTS-GE_SS_TEXT_LIGHT.otf') format('otf'), /* Super Modern Browsers */
+      //  url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+      //  url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+      //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'ArbFONTS-GE_SS_Two';
+  font-weight: 900;
+  src: url('../fonts/ArbFONTS-GE_SS_Two_Bold_4.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/ArbFONTS-GE_SS_Two_Bold_4.otf?#iefix') format('opentype'), /* IE6-IE8 */
+       url('../fonts/ArbFONTS-GE_SS_Two_Bold_4.otf') format('otf'), /* Super Modern Browsers */
+      //  url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+      //  url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+      //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'ArbFONTS-GE_SS_TWO_MEDIUM_5';
+  font-weight: 900;
+  src: url('../fonts/ArbFONTS-GE_SS_TWO_MEDIUM_5.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/ArbFONTS-GE_SS_TWO_MEDIUM_5.otf?#iefix') format('opentype'), /* IE6-IE8 */
+       url('../fonts/ArbFONTS-GE_SS_TWO_MEDIUM_5.otf') format('otf'), /* Super Modern Browsers */
+      //  url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+      //  url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+      //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

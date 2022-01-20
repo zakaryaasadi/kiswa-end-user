@@ -1,0 +1,19 @@
+@mixin transform($deg) {
+  transform: rotate($deg);
+  /* All browsers support */
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexColumnEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

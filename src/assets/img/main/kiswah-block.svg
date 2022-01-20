@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1352px" height="665px" viewBox="0 0 1352 665" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(0.000000, -3083.000000)" fill="#F6F8F9">
+            <g id="FEATURE" transform="translate(-233.000000, 3083.000000)">
+                <g id="BG">
+                    <path d="M93,-537 L1425,-537 L1425,442 L253,442 C164.63444,442 93,370.36556 93,282 L93,-537 L93,-537 Z" id="Rectangle" transform="translate(759.000000, -47.500000) rotate(-33.000000) translate(-759.000000, 47.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
