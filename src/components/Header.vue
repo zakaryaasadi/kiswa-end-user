@@ -74,20 +74,24 @@
             <signup-form :signuppage="true"></signup-form>
           </div>
         </div>
-        <div class="col-md-6 col-lg-7">
+        <div class="col-md-6 col-lg-7  d-flex">
           <div
-            class="caption_detail animate__animated"
+            class="caption_detail animate__animated justify-content-center align-self-center"
             v-inview:class="['animate__slideInRight']"
-          >
-            <h1>
-              كل تبرع…<br />
-              فرحة جديدة!
-            </h1>
-            <p>
-              <span>
-               مشروع متخصص بجمع و إعادة تدوير فائض الملابس و توزيعها على المحتاجين
-              </span>
-            </p>
+>
+<iframe src="https://free.timeanddate.com/countdown/i88lp5r3/n214/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cacfff/cpcfff/pct/tcfff/fs100/szw576/szh243/tat%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%B3%D9%88%D9%82%20%D9%83%D8%B3%D9%88%D8%A9/tacfff/tpt%D8%A8%D8%A7%D9%82%D9%8A%20%D9%85%D9%86%20%D8%A7%D9%84%D9%88%D9%82%D8%AA/tpcfff/iso2022-04-08T00:00:00" allowtransparency="true" frameborder="0" width="197" height="88"></iframe>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                      <img class="img-fluid" src="@/assets/img/Souq_package.png">
+                    </div>
+                    <div class="col-md-6 col-lg-5 d-flex ">
+                      <div class="justify-content-center align-self-center">
+                        <h1>15,000</h1>
+                        <h3><b>كسوة جديدة</b></h3>
+
+                      </div>
+                    </div>
+                  </div>
           </div>
         </div>
       </div>
