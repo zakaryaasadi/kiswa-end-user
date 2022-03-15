@@ -49,6 +49,7 @@
           <b-navbar-nav class="mr-auto links_">
             <b-nav-item to="/">اتصل بنا</b-nav-item>
             <b-nav-item href="/all-news">الأخبار</b-nav-item>
+            <b-nav-item href="/offers">العروض</b-nav-item>
             <b-nav-item to="/">طريقة العمل</b-nav-item>
             <b-nav-item to="/">عن كسوة</b-nav-item>
           </b-navbar-nav>

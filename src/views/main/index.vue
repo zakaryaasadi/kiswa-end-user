@@ -812,136 +812,21 @@
           </div>
         </div>
 
-        <!-- <div class="container-fluid">
-          <div class="row justify-content-md-center">
-            <div class="col-md-3">
-              <router-link class="custom-link" to="/home"
-                >المزيد من الأسئلة الشائعة</router-link
-              >
-            </div>
-          </div>
-        </div> -->
+
       </section>
     </main>
-    <footer id="footer" class="d-flex align-items-center">
-      <div class="container-fluid">
-        <div class="row justify-content-md-center my-5">
-          <div class="col-md-4 text-center">
-            <h2 class="footer-heading">اتصل بنا</h2>
-            <p class="footer-sub-heading">
-              تم رفع طلبكم بنجاح سيتصل بكم مندوبنا خلال يومين لتحديد توقيت
-              الإستلام الذي يناسبكم شكراً جزيلاً لإختياركم كسوة نتمنى لكم يوماً
-              طيباً
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-md-center my-5">
-          <div class="col-md-3 text-center my-3">
-            <a class="contact-link" href="tel:+9200 23420" target="_blank">
-              <font-awesome-icon :icon="faPhoneSquareAlt"></font-awesome-icon>
-              <span>9200 23420</span>
-            </a>
-          </div>
-          <div class="col-md-3 text-center my-3">
-            <a
-              class="contact-link"
-              href="https://wa.me/966500070201"
-              target="_blank"
-            >
-              <font-awesome-icon :icon="faWhatsapp"></font-awesome-icon>
-              <span>+966 50 007 0201</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <footer>
-      <!-- <div class="footer_main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-6">
-                  <h6>Company</h6>
-                  <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Careers Blog</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="">Brand Guidelines</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <h6>Resources</h6>
-                  <ul>
-                    <li><a href="">Download</a></li>
-                    <li><a href="">Help Center</a></li>
-                    <li><a href="">Guides</a></li>
-                    <li><a href="">Partners</a></li>
-                    <li><a href="">Events</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="container">
-        <div class="footer">
-          <ul class="footer_links">
-            <!-- <li><a href="">Status</a></li> -->
-            <li>
-              <a
-                href="https://tookanapp.s3-us-west-2.amazonaws.com/smarturls/kiswaPolicy.html"
-                target="_blank"
-                >Privacy & Terms</a
-              >
-            </li>
-            <li>
-              <a href="https://wa.me/966500070201" target="_blank"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <ul class="footer_links social_">
-            <li></li>
-            <li>
-              <a href="">
-                <font-awesome-icon :icon="faInstagram"></font-awesome-icon>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><font-awesome-icon :icon="faTwitter"></font-awesome-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "../../components/Header.vue";
 import carousel from "vue-owl-carousel";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import {
-  faInstagram,
-  faTwitter,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../../components/Footer.vue";
 export default {
-  components: { Header, carousel, FontAwesomeIcon },
+  components: { Header, carousel, Footer },
   data() {
     return {
-      faInstagram,
-      faTwitter,
-      faPhoneSquareAlt,
-      faWhatsapp,
-      article: null,
       images: [
         "image01.jpg",
         "C3383.00_00_32_015.Still001.jpg",

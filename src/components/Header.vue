@@ -52,6 +52,7 @@
               >اتصل بنا</b-nav-item
             >
             <b-nav-item href="/all-news">الأخبار</b-nav-item>
+            <b-nav-item href="/offers">العروض</b-nav-item>
             <b-nav-item href="#work">طريقة العمل</b-nav-item>
             <b-nav-item to="/">عن كسوة</b-nav-item>
           </b-navbar-nav>
@@ -87,7 +88,7 @@
                     <div class="col-md-6 col-lg-5 d-flex ">
                       <div class="justify-content-center align-self-center">
                         <h1>15,000</h1>
-                        <h3><b>كسوة جديدة</b></h3>
+                        <h1><b>كسوة جديدة</b></h1>
 
                       </div>
                     </div>

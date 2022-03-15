@@ -34,6 +34,14 @@ const router = new Router({
           }
         },
         {
+          path: '/offers',
+          component: () => import('./views/Offers'),
+          meta: {
+            rule: '',
+            title: ''
+          }
+        },
+        {
           path: '/account',
           component: () => import('./views/Account'),
           meta: {
