@@ -12,7 +12,7 @@
           
         </div>
 
-        <div class="card-deck text-right">
+        <div class="card-deck text-right" style="direction:rtl">
           <div class="card">
             <img src="@/assets/img/noon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -72,10 +72,10 @@
                 <b>سيفي</b>: <b>20%</b> على الأصناف غير المخفضة حتى <b>250</b> ريال سعودي
               </p>
               <p>
-                  <b>10%</b> على المنتجات المخفضة حتى <b>150</b> ريال سعودي 
+                  <b>%10</b> على المنتجات المخفضة حتى <b>150</b> ريال سعودي 
               </p>
               <p>
-                <b>5%</b> على <b>بيوتي ماكس</b> حتى ريال سعودي
+                <b>%5</b> على <b>بيوتي ماكس</b> حتى ريال سعودي
               </p>
             </div>
           </div>
