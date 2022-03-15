@@ -5,11 +5,7 @@
         <div class="row justify-content-md-center my-5">
           <div class="col-md-4 text-center">
             <h2 class="footer-heading">اتصل بنا</h2>
-            <p class="footer-sub-heading">
-              تم رفع طلبكم بنجاح سيتصل بكم مندوبنا خلال يومين لتحديد توقيت
-              الإستلام الذي يناسبكم شكراً جزيلاً لإختياركم كسوة نتمنى لكم يوماً
-              طيباً
-            </p>
+
           </div>
         </div>
         <div class="row justify-content-md-center my-5">
