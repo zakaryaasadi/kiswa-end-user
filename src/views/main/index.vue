@@ -2,7 +2,9 @@
   <div class="body">
     <Header />
     <main>
-      <section id="work" class="work__ top_section">
+
+      <section id="work" class="work__
+       top_section">
         <div class="container">
           <div class="section_header">
             <h2>كيف نعمل؟</h2>
@@ -157,68 +159,20 @@
           </div>
         </div>
       </section>
-      <section class="app_layout">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="wrap__app">
-                <img src="@/assets/img/main/kiswah-app.png" alt="kiswah-app" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div
-                class="center__view animate__animated"
-                v-inview:class="['animate__slideInRight']"
-              >
-                <div class="h_view">
-                  <h6>تطبيق كسوة</h6>
-                  <h2>حمّل تطبيق كسوة</h2>
-                  <ul>
-                    <li>سهولة في تقديم طلبات التبرع</li>
-                    <li>خاصية حفظ بيانتك لسرعة ارسال الطلبات في المستقبل</li>
-                    <li>امكانية تتبع حالة طلبك بشكل مباشر</li>
-                    <li>
-                      سهولة التواصل مع المندوب المخصص لك خلال يوم الإستلام
-                    </li>
-                  </ul>
-                  <!-- <p>
-                    يمكنك الحصول على خصومات وخدمات منوعة مقدمة من شركاءنا
-                    المحبين للخير وأهله. كل ما عليك هوا تحميل التطبيق واستخدامه
-                    للتبرع.
-                  </p> -->
-                </div>
 
-                <div class="btn_set">
-                  <button
-                    class="btn btn-app"
-                    @click="
-                      redirectTo(
-                        'https://play.google.com/store/apps/details?id=com.kiswa.customer&gl=SA'
-                      )
-                    "
-                  >
-                    <img
-                      src="@/assets/img/Google.png"
-                      alt="google-play-store"
-                    />
-                  </button>
-                  <button
-                    class="btn btn-app"
-                    @click="
-                      redirectTo(
-                        'https://apps.apple.com/sa/app/kiswah/id1514766556'
-                      )
-                    "
-                  >
-                    <img src="@/assets/img/Apple.png" alt="apple-store" />
-                  </button>
-                </div>
-              </div>
+
+          <section class="mb-5">
+                  <img class="img-fluid mb-4" style="width:100%" src="@/assets/img/strate-desktop.jpeg"/>
+
+            <div class="text-center">
+                          <h4>
+الخير دليل على الأناقة، لنفعل ذلك معاً            </h4>
+                          <button class="btn btn-success" @click="$router.push('lacoste')">تبرع الآن</button>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+
+
+
       <section class="work__">
         <div class="container">
           <div class="section_header">
@@ -309,6 +263,69 @@
               <router-link class="custom-link" to="/all-news"
                 >المزيد من الأخبار</router-link
               >
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <section class="app_layout">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="wrap__app">
+                <img src="@/assets/img/main/kiswah-app.png" alt="kiswah-app" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="center__view animate__animated"
+                v-inview:class="['animate__slideInRight']"
+              >
+                <div class="h_view">
+                  <h6>تطبيق كسوة</h6>
+                  <h2>حمّل تطبيق كسوة</h2>
+                  <ul>
+                    <li>سهولة في تقديم طلبات التبرع</li>
+                    <li>خاصية حفظ بيانتك لسرعة ارسال الطلبات في المستقبل</li>
+                    <li>امكانية تتبع حالة طلبك بشكل مباشر</li>
+                    <li>
+                      سهولة التواصل مع المندوب المخصص لك خلال يوم الإستلام
+                    </li>
+                  </ul>
+                  <!-- <p>
+                    يمكنك الحصول على خصومات وخدمات منوعة مقدمة من شركاءنا
+                    المحبين للخير وأهله. كل ما عليك هوا تحميل التطبيق واستخدامه
+                    للتبرع.
+                  </p> -->
+                </div>
+
+                <div class="btn_set">
+                  <button
+                    class="btn btn-app"
+                    @click="
+                      redirectTo(
+                        'https://play.google.com/store/apps/details?id=com.kiswa.customer&gl=SA'
+                      )
+                    "
+                  >
+                    <img
+                      src="@/assets/img/Google.png"
+                      alt="google-play-store"
+                    />
+                  </button>
+                  <button
+                    class="btn btn-app"
+                    @click="
+                      redirectTo(
+                        'https://apps.apple.com/sa/app/kiswah/id1514766556'
+                      )
+                    "
+                  >
+                    <img src="@/assets/img/Apple.png" alt="apple-store" />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

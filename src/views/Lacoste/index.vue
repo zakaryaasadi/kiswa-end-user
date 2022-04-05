@@ -9,8 +9,7 @@
           <div class="col-md-12 mt-5 mb-5">
             <div class="text-center">
                           <h4>
-              خير دليل على الأناقة هو اللعب سوياً
-            </h4>
+الخير دليل على الأناقة، لنفعل ذلك معاً            </h4>
                           <button class="btn btn-secondary" @click="$router.push('donate_form')">تبرع الآن</button>
             </div>
           </div>
