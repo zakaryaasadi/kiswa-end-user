@@ -87,7 +87,7 @@
                     </div>
                     <div class="col-md-6 col-lg-5 d-flex ">
                       <div class="justify-content-center align-self-center">
-                        <h1>15,000</h1>
+                        <h1>20,000</h1>
                         <h1><b>كسوة جديدة</b></h1>
 
                       </div>

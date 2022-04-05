@@ -10,9 +10,9 @@
         </div>
         <div class="row justify-content-md-center my-5">
           <div class="col-md-3 text-center my-3">
-            <a class="contact-link" href="tel:+9200 23420" target="_blank">
+            <a class="contact-link" href="tel:+966500070201" target="_blank">
               <font-awesome-icon :icon="faPhoneSquareAlt"></font-awesome-icon>
-              <span>9200 23420</span>
+              <span>+966500070201</span>
             </a>
           </div>
           <div class="col-md-3 text-center my-3">
@@ -49,12 +49,12 @@
           <ul class="footer_links social_">
             <li></li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/kiswaksa/">
                 <font-awesome-icon :icon="faInstagram"></font-awesome-icon>
               </a>
             </li>
             <li>
-              <a href=""
+              <a href="https://twitter.com/kiswaksa"
                 ><font-awesome-icon :icon="faTwitter"></font-awesome-icon>
               </a>
             </li>

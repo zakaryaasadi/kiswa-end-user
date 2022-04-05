@@ -42,6 +42,22 @@ const router = new Router({
           }
         },
         {
+          path: '/donate_form',
+          component: () => import('./views/DonateForm'),
+          meta: {
+            rule: '',
+            title: ''
+          }
+        },
+        {
+          path: '/lacoste',
+          component: () => import('./views/Lacoste'),
+          meta: {
+            rule: '',
+            title: ''
+          }
+        },
+        {
           path: '/account',
           component: () => import('./views/Account'),
           meta: {
