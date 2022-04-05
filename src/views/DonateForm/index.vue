@@ -2,7 +2,7 @@
   <div class="body">
     <PagesHeader />
     <main>
-      <img class="img-fluid" src="@/assets/img/strate-desktop.jpg">
+      <img class="img-fluid" style="width:100%" src="@/assets/img/strate-desktop.jpeg"/>
       <div class="container" style="direction:rtl">
         <div class="row">
           <div class="col-md-12">
@@ -11,7 +11,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 mx-auto" style="direction:ltr;">
+          <div class="col-md-6 mx-auto mb-5" style="direction:ltr;">
 
             <SignupFormDonate />
 
@@ -28,8 +28,6 @@
 
 
     </main>
-    <Footer />
-
 
 
   </div>
@@ -37,11 +35,10 @@
 
 <script>
 import PagesHeader from "../../components/PagesHeader.vue";
-import Footer from "../../components/Footer.vue";
 import SignupFormDonate from "../../components/SignupFormDonate.vue";
 
 
 export default {
-  components: { PagesHeader, Footer, SignupFormDonate },
+  components: { PagesHeader, SignupFormDonate },
 };
 </script>

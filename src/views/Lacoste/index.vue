@@ -2,7 +2,7 @@
   <div class="body">
     <PagesHeader />
     <main>
-      <img class="img-fluid" src="@/assets/img/strate-desktop.jpg"/>
+      <img class="img-fluid" style="width:100%" src="@/assets/img/strate-desktop.jpeg"/>
       <div class="container">
         <div class="row">
 
@@ -19,7 +19,7 @@
             <section id="work" class="work__">
             <div class="container">
               <div class="section_header">
-                <h2>كيف نعمل؟</h2>
+                <h2> تبرع في 4 خطوات</h2>
                 <!-- <p>نستلم تبرعاتك من موقعك ونوصلها لمحتاج يفرح بها</p> -->
               </div>
               <div class="kiswah_cards web">
@@ -31,28 +31,13 @@
                     >
                       <div class="c_card_img">
                         <img
-                          src="@/assets/img/stock-photo-beautiful-muslim-lady-at-work.png"
+                          src="@/assets/img/lacoste2.jpg"
                           alt=""
                         />
                       </div>
                       <div class="c_card_info">
-                        <h3><span class="num">2</span> تأكيد الطلب</h3>
-                        <p>سيتم التواصل معكم لتاكيد موعد وعنوان الإستلام</p>
-                      </div>
-                    </div>
-                    <div
-                      class="c_card__ animate__animated fift_"
-                      v-inview:class="['animate__slideInRight']"
-                    >
-                      <div class="c_card_img">
-                        <img src="@/assets/img/kiswah-image-5.png" alt="" />
-                      </div>
-                      <div class="c_card_info">
-                        <h3><span class="num">5</span> التوزيع</h3>
-                        <p>
-                          توزيع التبرعات على المحتاجين من خلال فريق كسوة التطوعي و
-                          تحت اشراف االجمعيات الخيرية المعتمدة
-                        </p>
+                        <h3><span class="num">2</span>تبرُّع</h3>
+                        <p>تبرع بالقطع الجيدة والنظيفة .</p>
                       </div>
                     </div>
                   </div>
@@ -62,11 +47,11 @@
                       v-inview:class="['animate__slideInUp']"
                     >
                       <div class="c_card_img">
-                        <img src="@/assets/img/press-phone.png" alt="" />
+                        <img src="@/assets/img/lacoste1.jpg" alt="" />
                       </div>
                       <div class="c_card_info">
-                        <h3><span class="num">1</span> اطلب الخدمة</h3>
-                        <p>تقديم طلب التبرع عبر الموقع الإلكتروني او التطبيق</p>
+                        <h3><span class="num">1</span>توصيل الملابس</h3>
+                        <p>اطلب مندوب لاستلام تبرعك عبر الموقع الالكتروني.</p>
                       </div>
                     </div>
                     <div class="row">
@@ -76,11 +61,11 @@
                           v-inview:class="['animate__slideInUp']"
                         >
                           <div class="c_card_img">
-                            <img src="@/assets/img/EQ0A0947.png" alt="" />
+                            <img src="@/assets/img/lacoste4.jpg" alt="" />
                           </div>
                           <div class="c_card_info">
-                            <h3><span class="num">4</span> اعادة التدوير</h3>
-                            <p>فرز واعادة تدوير التبرعات على يد فريقنا المختص</p>
+                            <h3><span class="num">4</span>اضغط على الرابط للتبرُّع</h3>
+                            <p>ارفع طلب تبرع من هنا بإدخال معلوماتك وتسليم التبرع.</p>
                           </div>
                         </div>
                       </div>
@@ -90,11 +75,11 @@
                           v-inview:class="['animate__slideInRight']"
                         >
                           <div class="c_card_img">
-                            <img src="@/assets/img/EQ0A1063.png" alt="" />
+                            <img src="@/assets/img/lacoste3.jpg" alt="" />
                           </div>
                           <div class="c_card_info">
-                            <h3><span class="num">3</span> استلام التبرعات</h3>
-                            <p>استلام تبرعاتكم من منزلكم مجاناً خلال 24 ساعة</p>
+                            <h3><span class="num">3</span>تحضير العناصر الخاصة بك</h3>
+                            <p>يمكنك وضع الملابس في صندوق</p>
                           </div>
                         </div>
                       </div>
@@ -107,11 +92,11 @@
                   <div class="col-sm-12">
                     <div class="c_card__ animate__animated flex_style">
                       <div class="c_card_img">
-                        <img src="@/assets/img/press-phone.png" alt="" />
+                        <img src="@/assets/img/lacoste1.jpg" alt="" />
                       </div>
                       <div class="c_card_info">
-                        <h3><span class="num">1</span> اطلب الخدمة</h3>
-                        <p>تقديم طلب التبرع عبر الموقع الإلكتروني او التطبيق</p>
+                        <h3><span class="num">1</span>توصيل الملابس</h3>
+                        <p>اطلب مندوب لاستلام تبرعك عبر الموقع الالكتروني.</p>
                       </div>
                     </div>
                   </div>
@@ -119,24 +104,24 @@
                     <div class="c_card__ animate__animated second_">
                       <div class="c_card_img">
                         <img
-                          src="@/assets/img/stock-photo-beautiful-muslim-lady-at-work.png"
+                          src="@/assets/img/lacoste2.jpg"
                           alt=""
                         />
                       </div>
                       <div class="c_card_info">
-                        <h3><span class="num">2</span> تأكيد الطلب</h3>
-                        <p>سيتم التواصل معكم لتاكيد موعد وعنوان الإستلام</p>
+                        <h3><span class="num">2</span>تبرُّع</h3>
+                        <p>تبرع بالقطع الجيدة والنظيفة .</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="c_card__ animate__animated blue__">
                       <div class="c_card_img">
-                        <img src="@/assets/img/EQ0A1063.png" alt="" />
+                        <img src="@/assets/img/lacoste3.jpg" alt="" />
                       </div>
                       <div class="c_card_info">
-                        <h3><span class="num">3</span> استلام التبرعات</h3>
-                        <p>استلام تبرعاتكم من منزلكم مجاناً خلال 24 ساعة</p>
+                        <h3><span class="num">3</span>تحضير العناصر الخاصة بك</h3>
+                        <p>يمكنك وضع الملابس في صندوق</p>
                       </div>
                     </div>
                   </div>
@@ -144,29 +129,15 @@
                   <div class="col-sm-12">
                     <div class="c_card__ animate__animated blue__">
                       <div class="c_card_img">
-                        <img src="@/assets/img/EQ0A0947.png" alt="" />
+                        <img src="@/assets/img/lacoste4.jpg" alt="" />
                       </div>
                       <div class="c_card_info">
-                        <h3><span class="num">4</span> اعادة التدوير</h3>
-                        <p>فرز واعادة تدوير التبرعات على يد فريقنا المختص</p>
+                        <h3><span class="num">4</span>اضغط على الرابط للتبرُّع</h3>
+                        <p>ارفع طلب تبرع من هنا بإدخال معلوماتك وتسليم التبرع.</p>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-12">
-                    <div class="c_card__ animate__animated fift_">
-                      <div class="c_card_img">
-                        <img src="@/assets/img/kiswah-image-5.png" alt="" />
-                      </div>
-                      <div class="c_card_info">
-                        <h3><span class="num">5</span> التوزيع</h3>
-                        <p>
-                          توزيع التبرعات على المحتاجين من خلال فريق كسوة التطوعي و
-                          تحت اشراف االجمعيات الخيرية المعتمدة
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -174,7 +145,7 @@
           </div>
 
 
-          <div class="col-md-6">
+          <div class="col-md-7">
             <p class="text-right">
               كسوة هو مشروع تشغيلي يعمل بالتعاقد مع الجمعيات الخيرية المعتمدة بالمملكة العربية السعودية بهدف التبرع للتخلص الآمن من الملابس وتعزيز روح التكافل والتعاون المجتمعي، وحماية للبيئة من التلوث الضار بدفن او حرق الملابس.
 لدى كسوة فريق عمل متكامل ومدرب لجمع الملابس وفرزها وتصنيفها إلى فئات وتغليف الصالح منها لمستفيدي الجمعيات الخيرية، وتصدير التالف منها إلى مصانع إعادة التدوير كي تعود بالنفع على الاقتصاد والريع المالي للجمعيات الخيرية بدلا من هدرها في النفايات، وتتم هذه العملية ضمن حلقة متصلة من الأقسام من عاملين من جمع وفرز وتوزيع الصالح وتصدير ومشاركة المتطوعين لتوزيع الملابس للأسر المتعففة. كسوة متواجدة في جميع المناطق حيث يتم رفع طلب التبرع عبر تطبيق كسوة او التواصل مع خدمة العملاء.
@@ -188,7 +159,7 @@
 
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-5">
             <img src="@/assets/img/lacoste-kiswa.png" class="img-fluid"/>
           </div>
           
