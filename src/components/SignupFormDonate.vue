@@ -1086,7 +1086,7 @@ export default {
     },
     async createtask() {
       this.taskLoading = true;
-      let url = `http://services.kiswaksa.com/api/task/create`;
+      let url = `https://services.kiswaksa.com/api/task/create`;
       let payload = {
         created_by: "Website:donate",
         country: "KSA",
