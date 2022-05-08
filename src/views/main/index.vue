@@ -161,15 +161,7 @@
       </section>
 
 
-          <section class="mb-5">
-                  <img class="img-fluid mb-4" style="width:100%" src="@/assets/img/strate-desktop.jpeg"/>
 
-            <div class="text-center">
-                          <h4>
-الخير دليل على الأناقة، لنفعل ذلك معاً            </h4>
-                          <button class="btn btn-success" @click="$router.push('lacoste')">تبرع الآن</button>
-            </div>
-          </section>
 
 
 
