@@ -76,22 +76,6 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-7  d-flex">
-          <div
-            class="caption_detail animate__animated justify-content-center align-self-center"
-            v-inview:class="['animate__slideInRight']">
-                  <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                      <img class="img-fluid" src="@/assets/img/Souq_package.png">
-                    </div>
-                    <div class="col-md-6 col-lg-5 d-flex ">
-                      <div class="justify-content-center align-self-center">
-                        <h1>20,000</h1>
-                        <h1><b>كسوة جديدة</b></h1>
-
-                      </div>
-                    </div>
-                  </div>
-          </div>
         </div>
       </div>
     </div>
