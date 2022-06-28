@@ -47,6 +47,12 @@
   </div>
 </template>
 
+<style>
+.floating-container {
+  display:none !important;
+}
+</style>
+
 
 
 
