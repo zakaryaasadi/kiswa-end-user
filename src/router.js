@@ -56,6 +56,14 @@ const router = new Router({
             rule: '',
             title: 'Task Order Successful'
           }
+        },
+        {
+          path: '/linktr',
+          component: () => import('./views/Linktr'),
+          meta: {
+            rule: '',
+            title: ''
+          }
         }
       ]
     }
