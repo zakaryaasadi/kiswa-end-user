@@ -1086,29 +1086,14 @@ export default {
     },
     async createtask() {
       this.taskLoading = true;
-      let url = `https://apiv1.kiswaksa.com/api/tasks/web`;
-      let payload = {
-        tags: [],
-        donations: [],
-        is_pickup: "1",
-        // region_id: "region",
-        job_description: `New task by ${this.customer.name}`,
-      };
-      // payload.location_id = this.locationData.id;
+      let url = `https://services.kiswaksa.com/api/task/create`;
+      let payload = {};
+      payload.name = this.newCustomer.name
       payload.phone = this.formattedPhone;
       payload.address = this.newCustomer.address;
-      payload.latitude = this.newCustomer.latitude;
-      payload.longitude = this.newCustomer.longitude;
-      payload.name = this.newCustomer.name;
-      this.donationType.forEach((donation) => {
-        payload.tags.push(`${donation.name}`);
-        payload.donations.push(Number(donation.id));
-      });
-      let selectedDate = `${this.selectedDate.split(",")[1]}`;
-      let splittedDate = selectedDate.split("/");
-      payload.job_delivery_datetime = `${splittedDate[2]}-${
-        splittedDate[1]
-      }-${splittedDate[0].trim()}`;
+      payload.country = "KSA";
+      payload.created_by = "Website";
+
 
       try {
         let res = await this.$http.post(url, payload);
@@ -1117,9 +1102,8 @@ export default {
         this.newCustomer.name = "";
         this.newCustomer.phone = "";
         this.newCustomer.address = "";
-        this.task = res.data.data;
-        localStorage.setItem("task", this.task);
         this.taskLoading = false;
+        console.log(res);
       } catch (error) {
         this.taskLoading = false;
         this.$refs["task_modal"].hide();
