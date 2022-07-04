@@ -1167,6 +1167,7 @@ export default {
         let res = await this.$http.get(url);
         console.log({ AvailableDates: res });
         this.availableDates = res.data.data;
+        this.availableDates.shift();
         localStorage.setItem("availableDates", this.availableDates);
       } catch (error) {
         console.log(error);
