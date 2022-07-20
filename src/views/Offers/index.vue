@@ -37,6 +37,15 @@
               <button class="btn btn-primary" style="min-height:0px!important" @click="show('redtag')">اقرأ المزيد</button>            
             </div>
           </div>
+          <div class="card">
+            <img src="@/assets/img/liv.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Liv Fitness | لڤ فتنس</h3>
+              <h4 class="card-text">خصم 50%</h4>
+              <button class="btn btn-primary" style="min-height:0px!important" @click="show('liv')">اقرأ المزيد</button>            
+            </div>
+          </div>
+          
         </div>
       </div>
       
@@ -87,7 +96,41 @@
         </div>
       </modal>
 
-
+   <modal
+        name="liv"
+        :width="700"
+        height="auto"
+        :resizable="true"
+        :adaptive="true"
+        :scrollable="true"
+      >
+        <div class="text-right pr-3 pt-2">
+          <small class="text-primary mb-3 cancel" @click="cancel('liv')"><b>x</b></small>
+        </div>
+        <div class="more__news">
+          <div class="p__info">
+            <h4>Liv Fitness | لڤ فتنس</h4>
+            <div class="text-right" style="direction:rtl">
+              <p>
+                هذا العرض مقدم من نادي لڤ فتنس للمتبرعات بفائض ملابسهم لصالح مشروع كسوة دعمًا لهم في مدينة جدة  (للنساء فقط)
+              </p>
+              <h4>
+                <b>خصم بقيمة 50% </b>
+              </h4>
+              <ul>
+                <li>الخصم لا يسري على العروض الترويجية</li>
+                <li>يطبق الخصم على الأسعار الأساسية للاشتراكات</li>
+                <li>الخصم ساري حتى 22 مايو 2022</li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="@/assets/img/liv.png"
+            alt="thumbnail"
+            class="img-fluid"
+          />
+        </div>
+      </modal>
           <modal
         name="fitness"
         :width="700"
