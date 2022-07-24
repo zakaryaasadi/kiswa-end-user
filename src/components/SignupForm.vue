@@ -332,7 +332,7 @@
             <b>الجمعيات</b> <br />
             اختر أحد الجمعيات المتاحة
           </p>
-          <div class="card_info small_bar">
+          <div class="card_info small_bar" style="direction:rtl;">
             <select
               name="availableDates"
               id="availableDates"
