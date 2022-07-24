@@ -344,7 +344,7 @@
               <option value=""><p>جمعية البر الخيرية بالدليمية </p></option>
               <option value=""><p>جمعية البر الخيرية بتمير</p></option>
               <option value=""><p>جمعية الملك خالد الخيرية النسائية بتبوك</p></option>
-              <option value=""><p>جمعية البر الخير بالشرائع </p></option>
+              <option value=""><p>جمعية البر الخيرية بالشرائع </p></option>
               <option value=""><p>جمعية رعاية الأيتام في طريف</p></option>
               <option value=""><p>جمعية الملك عبدالعزيز الخيرية النسائية بالجوف</p></option>
             </select>
