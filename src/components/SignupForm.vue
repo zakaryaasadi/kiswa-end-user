@@ -329,40 +329,24 @@
         </div>
         <div class="section_info">
           <p>
-            <b>اليوم</b> <br />
-            اختر أحد الأيام المتاحة
+            <b>الجمعيات</b> <br />
+            اختر أحد الجمعيات المتاحة
           </p>
           <div class="card_info small_bar">
             <select
               name="availableDates"
               id="availableDates"
-              v-model="selectedDate"
-              required
             >
-              <option v-if="availableDates[0]" disabled value=""><p>{{availableDates[0].date}}</p></option>
-              <option
-                :value="date.date"
-                v-for="(date) in availableDates"
-                :key="date.date"
-              >
-                <p>{{ date.date }}</p>
-                <div class="check_" v-if="date.is_full">
-                  <svg
-                    width="13"
-                    height="12"
-                    viewBox="0 0 13 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12.9979 0.887183L4.26693 11.1945L3.45269 11.1576L0 6.24127L0.843095 5.65023L3.91266 10.0197L12.2122 0.220703L13 0.887183H12.9979Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-              </option>
+              <option value=""><p>جمعية الصم و ضعاف السمع و ذويهم - الدمام</p></option>
+              <option value=""><p>جمعية خيبر النسائية الخيرية</p></option>
+              <option value=""><p>جمعية أبو جلال الخيرية </p></option>
+              <option value=""><p>جمعية البر الخيرية بالقرين</p></option>
+              <option value=""><p>جمعية البر الخيرية بالدليمية </p></option>
+              <option value=""><p>جمعية البر الخيرية بتمير</p></option>
+              <option value=""><p>جمعية الملك خالد الخيرية النسائية بتبوك</p></option>
+              <option value=""><p>جمعية البر الخير بالشرائع </p></option>
+              <option value=""><p>جمعية رعاية الأيتام في طريف</p></option>
+              <option value=""><p>جمعية الملك عبدالعزيز الخيرية النسائية بالجوف</p></option>
             </select>
           </div>
         </div>
