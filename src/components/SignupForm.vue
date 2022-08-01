@@ -928,7 +928,7 @@ export default {
 
       try {
         let res = await this.$http.get(url);
-        console.log({ address: res.data.results[0].formatted_address });
+        console.log(res.data);
 
         this.newCustomer.address = res.data.results[0].formatted_address;
         if (!this.newCustomer.address) {
