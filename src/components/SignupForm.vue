@@ -924,7 +924,7 @@ export default {
     },
     async getCurrentAddress(location) {
       this.newCustomer.address = "Riyadh, Saudi Arabia";
-      let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.lat},${location.lng}&key=${process.env.VUE_APP_GOOGLE_API_KEY}`;
+      let url = `https://services.kiswaksa.com/api/google/${location.lat},${location.lng}`;
 
       try {
         let res = await this.$http.get(url);
