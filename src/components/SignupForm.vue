@@ -166,7 +166,7 @@
             required
           >
           </vue-google-autocomplete>
-          <div class="map_wrapp mt-4" id="map_wrapp">
+          <!-- <div class="map_wrapp mt-4" id="map_wrapp" >
             <gmaps-map :options="options" @click="showEvent">
               <gmaps-marker
                 :options="markerOption"
@@ -174,7 +174,7 @@
                 @move="updateLocation"
               ></gmaps-marker>
             </gmaps-map>
-          </div>
+          </div> -->
         </div>
         <div class="form-group">
           <button class="btn btn-primary btn-block">
@@ -798,13 +798,13 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "vue-phone-number-input/dist/vue-phone-number-input.css";
 import eventHub from "../../eventBus";
-import { gmapsMap, gmapsMarker } from "x5-gmaps";
+// import { gmapsMap, gmapsMarker } from "x5-gmaps";
 
 export default {
   components: {
     VuePhoneNumberInput,
-    gmapsMap,
-    gmapsMarker,
+    // gmapsMap,
+    // gmapsMarker,
     // VueTimepicker,
     VueGoogleAutocomplete,
   },
@@ -922,25 +922,25 @@ export default {
       this.center[0] = addressData.latitude;
       this.center[1] = addressData.longitude;
     },
-    async getCurrentAddress(location) {
-      this.newCustomer.address = "Riyadh, Saudi Arabia";
-      let url = `https://services.kiswaksa.com/api/google/${location.lat},${location.lng}`;
+    // async getCurrentAddress(location) {
+    //   this.newCustomer.address = "Riyadh, Saudi Arabia";
+    //   let url = `https://services.kiswaksa.com/api/google/${location.lat},${location.lng}`;
 
-      try {
-        let res = await this.$http.get(url);
-        console.log(res.data);
+    //   try {
+    //     let res = await this.$http.get(url);
+    //     console.log(res.data);
 
-        this.newCustomer.address = res.data.results[0].formatted_address;
-        if (!this.newCustomer.address) {
-          this.newCustomer.address = "Riyadh, Saudi Arabia";
-        }
-      } catch (error) {
-        console.log({ error });
-        if (!this.newCustomer.address) {
-          this.newCustomer.address = "Riyadh, Saudi Arabia";
-        }
-      }
-    },
+    //     this.newCustomer.address = res.data.results[0].formatted_address;
+    //     if (!this.newCustomer.address) {
+    //       this.newCustomer.address = "Riyadh, Saudi Arabia";
+    //     }
+    //   } catch (error) {
+    //     console.log({ error });
+    //     if (!this.newCustomer.address) {
+    //       this.newCustomer.address = "Riyadh, Saudi Arabia";
+    //     }
+    //   }
+    // },
     async updatePasswordFunc() {
       this.updatePasswordLoading = true;
       let url = `https://apiv1.kiswaksa.com/api/customer/update-password`;
