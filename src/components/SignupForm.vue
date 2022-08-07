@@ -178,7 +178,7 @@
         </div>
         <div class="form-group">
           <button class="btn btn-primary btn-block">
-            <span>انشاء الطلب</span>
+            <span>إنشاءالطلب</span>
             <div
               class="spinner-border text-light ms-2"
               role="status"
@@ -215,7 +215,7 @@
             لديك طلب قائم؟
             <span>تابع حالة طلبك من خلال هذا الرابط</span>
           </p> -->
-          <p>يمكنك تحديد اليوم بعد الضغط على انشاء الطلب</p>
+          <p>يمكنك تحديد اليوم بعد الضغط على إنشاء الطلب</p>
         </div>
       </b-form>
     </div>
@@ -480,7 +480,7 @@
               </div>
             </button>
           <button class="btn btn-primary btn-block" v-else>
-            <span>انشاء الطلب</span>
+            <span>إنشاء الطلب</span>
             <span class="check_">
               <svg
                 width="13"
@@ -560,7 +560,7 @@
               </div>
             </button>
             <button class="btn btn-primary btn-block" type="submit" v-else>
-              <span>انشاء الطلب</span>
+              <span>إنشاء الطلب</span>
               <span class="check_">
                 <svg
                   width="13"
