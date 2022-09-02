@@ -790,6 +790,7 @@ import VuePhoneNumberInput from "vue-phone-number-input";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "vue-phone-number-input/dist/vue-phone-number-input.css";
 import eventHub from "../../eventBus";
+import $ from "jquery";
 
 export default {
   components: {
@@ -913,7 +914,6 @@ export default {
       this.center[1] = addressData.longitude;
     },
     async getCurrentAddress(location) {
-      this.newCustomer.address = "Riyadh, Saudi Arabia";
       let url = `https://services.kiswaksa.com/api/google/${location.lat},${location.lng}`;
 
       try {
@@ -1036,6 +1036,13 @@ export default {
       payload.address = this.newCustomer.address;
       payload.country = "KSA";
       payload.created_by = "Website";
+
+
+      if(!this.newCustomer.address){
+        payload.address = $('#map').val();
+      }
+
+
 
 
       try {
