@@ -166,15 +166,7 @@
             required
           >
           </vue-google-autocomplete>
-          <div class="map_wrapp mt-4" id="map_wrapp">
-            <gmaps-map :options="options" @click="showEvent">
-              <gmaps-marker
-                :options="markerOption"
-                :position="position"
-                @move="updateLocation"
-              ></gmaps-marker>
-            </gmaps-map>
-          </div>
+
         </div>
         <div class="form-group">
           <button class="btn btn-primary btn-block">
@@ -793,18 +785,16 @@
 import VueGoogleAutocomplete from "vue-google-autocomplete";
 // import VueTimepicker from "vue2-timepicker/src/vue-timepicker.vue";
 import VuePhoneNumberInput from "vue-phone-number-input";
-import mapboxgl from "mapbox-gl";
-import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+// import mapboxgl from "mapbox-gl";
+// import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "vue-phone-number-input/dist/vue-phone-number-input.css";
 import eventHub from "../../eventBus";
-import { gmapsMap, gmapsMarker } from "x5-gmaps";
 
 export default {
   components: {
     VuePhoneNumberInput,
-    gmapsMap,
-    gmapsMarker,
+
     // VueTimepicker,
     VueGoogleAutocomplete,
   },
@@ -967,38 +957,7 @@ export default {
     hideTaskModal() {
       this.$refs["task_modal"].hide();
     },
-    async createMap(value) {
-      console.log({ center: value });
-      try {
-        mapboxgl.accessToken = this.access_token;
-        this.map = new mapboxgl.Map({
-          container: "map_wrapp",
-          style: "mapbox://styles/mapbox/streets-v11",
-          center: value,
-          zoom: 11,
-        });
 
-        let geocoder = new MapboxGeocoder({
-          accessToken: this.access_token,
-          mapboxgl: mapboxgl,
-          marker: false,
-        });
-
-        geocoder.on("result", (e) => {
-          const marker = new mapboxgl.Marker({
-            draggable: true,
-            color: "#D80739",
-          })
-            .setLngLat({ lat: value.lat, lng: value.lng })
-            .addTo(this.map);
-          marker.on("dragend", () => {
-            this.center = Object.values(e.target.getLngLat());
-          });
-        });
-      } catch (err) {
-        console.log("map error", err);
-      }
-    },
     async getCurrentLocation() {
       let res = await this.$getLocation();
       this.getCurrentAddress(res);
