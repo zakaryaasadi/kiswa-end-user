@@ -330,15 +330,17 @@
               id="availableDates"
             >
               <option value=""><p>جمعية الصم و ضعاف السمع و ذويهم - الدمام</p></option>
+              <option value=""><p>جمعية الملك عبدالعزيز الخيرية النسائية بالجوف</p></option>
               <option value=""><p>جمعية خيبر النسائية الخيرية</p></option>
               <option value=""><p>جمعية أبو جلال الخيرية </p></option>
               <option value=""><p>جمعية البر الخيرية بالقرين</p></option>
               <option value=""><p>جمعية البر الخيرية بالدليمية </p></option>
               <option value=""><p>جمعية البر الخيرية بتمير</p></option>
+              <option value=""><p>جمعية الملك فهد الخيرية النسائية بجازان</p></option>
+              <option value=""><p>جمعية التنمية الأسرية بمنطقة حائل (وفاق)</p></option>
               <option value=""><p>جمعية الملك خالد الخيرية النسائية بتبوك</p></option>
+              <option value=""><p>الجمعية النسائية الخيرية الأولى بجدة</p></option>
               <option value=""><p>جمعية البر الخيرية بالشرائع </p></option>
-              <option value=""><p>جمعية رعاية الأيتام في طريف</p></option>
-              <option value=""><p>جمعية الملك عبدالعزيز الخيرية النسائية بالجوف</p></option>
             </select>
           </div>
         </div>
