@@ -155,19 +155,16 @@
           <i class="fas fa-eye" @click="togglePasswordVisibility"></i
           >
         </div> -->
-        <div class="form-group map_">
-          <vue-google-autocomplete
-            id="map"
-            ref="address"
-            classname="form-control ok"
-            placeholder="رابط الموقع من خرائط جوجل"
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="المحافظة، اسم المنطقة، اسم الشارع، اسم البناء، رقم الشقة"
             v-model="newCustomer.address"
-            v-on:placechanged="getAddressData"
             required
-          >
-          </vue-google-autocomplete>
-
+          />
         </div>
+
         <div class="form-group">
           <button class="btn btn-primary btn-block">
             <span>إنشاءالطلب</span>
@@ -784,7 +781,7 @@
 </template>
 
 <script>
-import VueGoogleAutocomplete from "vue-google-autocomplete";
+// import VueGoogleAutocomplete from "vue-google-autocomplete";
 // import VueTimepicker from "vue2-timepicker/src/vue-timepicker.vue";
 import VuePhoneNumberInput from "vue-phone-number-input";
 // import mapboxgl from "mapbox-gl";
@@ -792,14 +789,14 @@ import VuePhoneNumberInput from "vue-phone-number-input";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "vue-phone-number-input/dist/vue-phone-number-input.css";
 import eventHub from "../../eventBus";
-import $ from "jquery";
+// import $ from "jquery";
 
 export default {
   components: {
     VuePhoneNumberInput,
 
     // VueTimepicker,
-    VueGoogleAutocomplete,
+    // VueGoogleAutocomplete,
   },
   data() {
     return {
@@ -849,7 +846,6 @@ export default {
       selectedDate: "",
       address: "",
       location: "",
-      access_token: process.env.VUE_APP_MAP_ACCESS_TOKEN,
       center: [0, 0],
       map: {},
       markerOption: {
@@ -892,11 +888,11 @@ export default {
     eventHub.$on("customChange", this.loginModalFunc);
   },
   methods: {
-    updateLocation(pos) {
-      this.newCustomer.latitude = pos.lat;
-      this.newCustomer.longitude = pos.lng;
-      this.getCurrentAddress({ lat: pos.lat, lng: pos.lng });
-    },
+    // updateLocation(pos) {
+    //   this.newCustomer.latitude = pos.lat;
+    //   this.newCustomer.longitude = pos.lng;
+    //   this.getCurrentAddress({ lat: pos.lat, lng: pos.lng });
+    // },
     makeToast() {
       this.$bvToast.toast("عفوًا ... خطأ في إنشاء المهمة", {
         title: `خطأ`,
@@ -915,24 +911,7 @@ export default {
       this.center[0] = addressData.latitude;
       this.center[1] = addressData.longitude;
     },
-    async getCurrentAddress(location) {
-      let url = `https://services.kiswaksa.com/api/google/${location.lat},${location.lng}`;
 
-      try {
-        let res = await this.$http.get(url);
-        console.log(res.data);
-
-        this.newCustomer.address = res.data.results[0].formatted_address;
-        if (!this.newCustomer.address) {
-          this.newCustomer.address = "Riyadh, Saudi Arabia";
-        }
-      } catch (error) {
-        console.log({ error });
-        if (!this.newCustomer.address) {
-          this.newCustomer.address = "Riyadh, Saudi Arabia";
-        }
-      }
-    },
     async updatePasswordFunc() {
       this.updatePasswordLoading = true;
       let url = `https://apiv1.kiswaksa.com/api/customer/update-password`;
@@ -1038,11 +1017,6 @@ export default {
       payload.address = this.newCustomer.address;
       payload.country = "KSA";
       payload.created_by = "Website";
-
-
-      if(!this.newCustomer.address){
-        payload.address = $('#map').val();
-      }
 
 
 
