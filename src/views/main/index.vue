@@ -919,7 +919,12 @@ export default {
       let url = `https://apiv1.kiswaksa.com/api/charities`;
       try {
         let res = await this.$http.get(url);
-        this.charities = res.data.data.data;
+        res.data.data.links.forEach(async element => {
+          if(element.url != null){
+            let result = await this.$http.get(element.url);
+            this.charities =  this.charities.concat(result.data.data.data);
+          }
+        });
       } catch (error) {
         console.log(error);
         if (error.response) {
