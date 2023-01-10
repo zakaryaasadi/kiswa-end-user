@@ -1163,8 +1163,14 @@ footer .social_ {
     }
   }
 }
+#dfa_image{
+  display: none;
+}
 
 @media (max-width: 768px) {
+  #dfa_image{
+    display: block;
+  }
   .assoc_list {
     flex-direction: row;
   }
@@ -1201,7 +1207,6 @@ footer .social_ {
   .work__ {
     &.top_section {
       margin-bottom: 3em;
-      padding-top: 26em;
       .section_header {
         margin-bottom: 2em;
         p {

@@ -3,6 +3,15 @@
     <Header />
     <main>
 
+
+      <section id="dfa_image" class="mt-4">
+        <div class="d-flex justify-content-center">
+          <a href="https://kiswaksa.com/winter/" target="_blank">
+            <img src="@/assets/img/df_logo.png" class="img-fluid">
+        </a>
+        </div>
+      </section>
+
       <section id="work" class="work__
        top_section">
         <div class="container">
