@@ -159,7 +159,26 @@
           <input
             type="text"
             class="form-control"
-            placeholder="المحافظة، اسم المنطقة، اسم الشارع، اسم البناء، رقم الشقة"
+            placeholder="المحافظة"
+            v-model="newCustomer.city"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="اسم المنطقة أو الحي"
+            v-model="newCustomer.district"
+            required
+          />
+        </div>
+        
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="اسم البناء - رقم المنزل أو الفيلا"
             v-model="newCustomer.address"
             required
           />
@@ -814,6 +833,8 @@ export default {
         password: "",
         phone: "",
         email: "",
+        city: "",
+        district: "",
         address: "",
         latitude: 0,
         longitude: 0,
@@ -1010,14 +1031,13 @@ export default {
     },
     async createtask() {
       this.taskLoading = true;
-      let url = `https://services.kiswaksa.com/api/task/create`;
+     let url = `https://services.kiswaksa.com/api/task/create`;
       let payload = {};
       payload.name = this.newCustomer.name
       payload.phone = this.formattedPhone;
-      payload.address = this.newCustomer.address;
+      payload.address ="المملكة العربية السعودية - " + this.newCustomer.city + " - " + this.newCustomer.district + " - " + this.newCustomer.address;
       payload.country = "KSA";
       payload.created_by = "Website";
-
 
 
 
@@ -1027,6 +1047,8 @@ export default {
         this.$router.push("/success");
         this.newCustomer.name = "";
         this.newCustomer.phone = "";
+        this.newCustomer.city = "";
+        this.newCustomer.district = "";
         this.newCustomer.address = "";
         this.taskLoading = false;
         console.log(res);
@@ -1036,6 +1058,8 @@ export default {
         this.makeToast();
         this.newCustomer.name = "";
         this.newCustomer.phone = "";
+        this.newCustomer.city = "";
+        this.newCustomer.district = "";
         this.newCustomer.address = "";
         if (error.response) {
           console.log(error.response);
