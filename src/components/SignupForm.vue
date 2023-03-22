@@ -159,7 +159,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="المحافظة"
+            placeholder="المدينة"
             v-model="newCustomer.city"
             required
           />
@@ -168,7 +168,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="اسم المنطقة أو الحي"
+            placeholder="اسم الحي"
             v-model="newCustomer.district"
             required
           />
@@ -178,7 +178,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="اسم البناء - رقم المنزل أو الفيلا"
+            placeholder="أقرب معلم - اسم الشارع"
             v-model="newCustomer.address"
             required
           />
