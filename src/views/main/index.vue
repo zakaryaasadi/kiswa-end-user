@@ -6,8 +6,8 @@
 
       <section id="dfa_image" class="mt-4">
         <div class="d-flex justify-content-center">
-          <a href="https://kiswaksa.com/winter/" target="_blank">
-            <img src="@/assets/img/df_logo.png" class="img-fluid">
+          <a style="color: #009bc9; margin-top: 100px;f;" href="https://kiswaksa.com/winter/" target="_blank">
+            <h2 style="font-weight: 800;font-size: 40px">٥٠ الف كسوة عيد</h2>
         </a>
         </div>
       </section>
