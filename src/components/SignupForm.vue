@@ -3,7 +3,7 @@
   <div class="form_wrapp">
     <div class="form_header">
       <div class="form_caption">
-        <h2>طلب تبرع جديد</h2>
+        <h2>طلب استلام جديد</h2>
         <!-- <p>سيتم التواصل معك من قبل المندوب لتأكيد موعد الاستلام</p> -->
       </div>
       <span class="icon_view">
