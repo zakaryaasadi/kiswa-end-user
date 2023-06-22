@@ -53,6 +53,7 @@
             >
             <b-nav-item href="/all-news">الأخبار</b-nav-item>
             <b-nav-item href="/offers">العروض</b-nav-item>
+            <b-nav-item href="/partners">شركاؤنا</b-nav-item>
             <b-nav-item href="#work">طريقة العمل</b-nav-item>
             <b-nav-item to="/">عن كسوة</b-nav-item>
           </b-navbar-nav>
