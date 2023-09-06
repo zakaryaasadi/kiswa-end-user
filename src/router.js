@@ -66,6 +66,14 @@ const router = new Router({
           }
         },
         {
+          path: '/privacy-and-conditions',
+          component: () => import('./views/PrivacyAndConditions'),
+          meta: {
+            rule: '',
+            title: ''
+          }
+        },
+        {
           path: '/linktr',
           component: () => import('./views/Linktr'),
           meta: {
